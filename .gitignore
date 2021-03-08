@@ -1,3 +1,5 @@
+# Devon's Ultimate Python gitignore Ver 1.3 (2019-05-09)
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -47,7 +49,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
 .hypothesis/
 .pytest_cache/
 
@@ -59,7 +60,6 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -91,12 +91,8 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# celery beat schedule file
 celerybeat-schedule
-celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
@@ -127,3 +123,29 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IntelliJ
+.idea/
+.intellij/
+
+# Visual Studio
+.vs/
+.visualstudio/
+
+# Configuration files
+/config.json
+/config.py
+/config.toml
+/config.yaml
+/config.yml
+
+# Log folders
+logs/
+.logs/
+
+# Database or private storage files
+.data/
+.db/
+
+# Build outputs
+output/
