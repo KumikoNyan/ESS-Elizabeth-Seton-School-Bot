@@ -346,10 +346,10 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
 
 # -------------------------------------------------
 # Reminder by @KumikoNyan (Owner)
-# $remind/remindme/remind_me [Time] [Your Reminder]
+# !remind/remindme/remind_me [Time] [Your Reminder]
 # Time can be in:
 # d - days | h - hours | m - minutes | s - seconds
-# $help - shows this menu.
+# !help - shows this menu.
 # example: !remindme 30s Check the stove.
 # -------------------------------------------------
 
