@@ -388,9 +388,9 @@ async def reminder(ctx, time, *, reminder):
         embed.add_field(name='Warning',
                             value='The duration is too long!\nMaximum duration is 1 year.')
     else:
-        await ctx.send(f"Alright, I will remind you about: ```{reminder}``` in **{counter}**.")
+        await ctx.send(f"Alright {user.mention}, I will remind you about: ```{reminder}``` in **{counter}**.")
         await asyncio.sleep(seconds)
-        await ctx.send(f"Hi, you asked me to remind you about: ```{reminder}``` **{counter}** ago.", mention_author=True)
+        await ctx.send(f"Hi {user.mention}, you asked me to remind you about: ```{reminder}``` **{counter}** ago.")
         return
     await ctx.send(embed=embed)
 
@@ -398,6 +398,44 @@ async def reminder(ctx, time, *, reminder):
 # Commands (NOT ALL ARE VISIBLE FOR USERS)
 
 
+@bot.command()  # Will dm the user
+async def helpdm(ctx):
+    user = ctx.message.author
+    await ctx.author.send(f"""
+
+***Thank you {user.mention} for using Ina'nis bot! Here are the list of commands available!***
+
+:mechanical_arm: **List of Commands:** :mechanical_leg:
+```'!help' - shows this menu.\n'!bio' - shows the class link for the Biology class.
+'!eap' - shows the class link for EAP class.\n'!phy' - shows the class link for Physics class.
+'!entrep' - shows the class link for Entrepreneurship class.\n'!hr' - shows the class link for Homeroom.
+'!guidance' - shows the class link for Guidance class.\n'!sched' - shows the current schedule for the term.```
+
+:school: **ELIZABETH SETON SCHOOL INFORMATION:** :school_satchel:
+```'!essfb' - shows the official Facebook page of Elizabeth Seton School.
+'!ess' - shows the official website of Elizabeth Seton School.```
+
+:alarm_clock: **How to use the Reminder?** :alarm_clock:
+```'!remind/remindme/remind_me [Time] [Your Reminder].'
+Time can be in:
+d - days\nh - hours\nm - minutes\ns - seconds
+'!helpr' - shows this menu.
+example: !remindme 30s Check the stove.\nby @KumikoNyan```
+
+:question: **How to use the Todo List?** :question:
+```'!todo' - Show the current todo list.\n'!add [TODO]' - Add a new todo.\n'!done [ID]' - Mark a todo done (delete).
+'!helpt' - Show this menu.\nby @KumikoNyan```
+
+:file_folder: **File Hosting Sites and More!** :open_file_folder:
+```'!mega' - shows the MEGA file hosting site.\n'!gd' - shows Google Drive.\n'!db' - shows Dropbox.
+'!md' - shows Microsoft OneDrive.\n'!pb' - shows the reliable Paste Bin!
+'!git' - shows the official GitHub repository of the ESS-Bot for Discord!```
+
+:ok_hand: **Extra Commands:** :ok_hand:
+```'!ping' - to check the current latency.\n'!clear [value]' - clears certain amount of messages (limit is 10).
+'!8 [Question]' - try out our new 8 Ball Magic Game!```""")
+    
+  
 @bot.command()
 async def ping(ctx):
     await ctx.send(f'Current latency is **{round(bot.latency * 1000)}ms**')
