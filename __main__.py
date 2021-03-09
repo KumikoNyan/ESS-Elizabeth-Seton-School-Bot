@@ -18,7 +18,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 bot.load_extension('cogs.Todo')  # loads the Todo feature with timers
 
 # Variables needed for the formatted strings
-status = cycle(['!help', '@KumikoNyan', '@MoeFAX', '@Jinrooo', 'Destiny 2', 'Fallout 4', 'Skyrim SE', 'Mark has no dick'])
+status = cycle(['!help', '@KumikoNyan', '@MoeFAX', '@Jinrooo', 'Destiny 2', 'Fallout 4', 'Skyrim SE', 'I love you!'])
 text = 'This is **Biology Class**:\n '
 text1 = 'This is **English for Academic and Professional Purposes Class**:\n '
 text2 = 'This is **Physics Class**:\n '
