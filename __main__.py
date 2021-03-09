@@ -399,7 +399,7 @@ async def reminder(ctx, time, *, reminder):
 
 
 @bot.command()  # Will dm the user
-async def helpdm(ctx):
+async def commands(ctx):
     user = ctx.message.author
     await ctx.author.send(f"""
 
