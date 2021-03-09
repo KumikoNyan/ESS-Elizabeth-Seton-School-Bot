@@ -391,6 +391,7 @@ async def reminder(ctx, time, *, reminder):
         await ctx.send(f"Alright {user.mention}, I will remind you about: ```{reminder}``` in **{counter}**.")
         await asyncio.sleep(seconds)
         await ctx.send(f"Hi {user.mention}, you asked me to remind you about: ```{reminder}``` **{counter}** ago.")
+        await ctx.author.send(f"Hi {user.mention}, you asked me to remind you about: ```{reminder}``` **{counter}** ago.")
         return
     await ctx.send(embed=embed)
 
@@ -398,7 +399,7 @@ async def reminder(ctx, time, *, reminder):
 # Commands (NOT ALL ARE VISIBLE FOR USERS)
 
 
-@bot.command()  # Will dm the user
+@bot.command(aliases=['helpc'])  # Will dm the user
 async def commands(ctx):
     user = ctx.message.author
     await ctx.author.send(f"""
