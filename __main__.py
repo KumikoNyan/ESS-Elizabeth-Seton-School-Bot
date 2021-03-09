@@ -1,7 +1,7 @@
 import discord
 import asyncio
 import random
-# import os - use this if you want to use the for filename method instead of the bot.load_extension
+# import os - use this if you want to use the 'for filename method' instead of the bot.load_extension
 import datetime
 from discord.ext import commands, tasks
 from itertools import cycle
@@ -15,7 +15,7 @@ intents.guilds = True
 toDoDB = []  # empty list for storing stuffs lol
 # bot = discord.Client()
 bot = commands.Bot(command_prefix='!', intents=intents)
-bot.load_extension('cogs.Todo')  # load the Todo feature with timers
+bot.load_extension('cogs.Todo')  # loads the Todo feature with timers
 
 # Variables needed for the formatted strings
 status = cycle(['!help', '@KumikoNyan', '@MoeFAX', '@Jinrooo', 'Destiny 2', 'Fallout 4', 'Skyrim SE', 'Mark has no dick'])
@@ -116,7 +116,7 @@ async def on_command_error(ctx, error):  # you shouldn't remove ctx or the run w
     raise error
 
 
-# Logging
+# Logging (Run Terminal not on the Server)
 # Shows the members and Guilds (Servers) added or removed
 @bot.event
 async def on_member_join(member):
@@ -380,13 +380,13 @@ async def reminder(ctx, time, *, reminder):
         counter = f"{seconds} seconds"
     if seconds == 0:
         embed.add_field(name='Warning',
-                            value='Please type $help for more information')
+                            value='Please type !helpr for more information')
     elif seconds < 10:
         embed.add_field(name='Warning',
-                            value='You have specified a too short duration!\nMinimum duration is 10 seconds.')
+                            value='The duration is too short!\nMinimum duration is 10 seconds.')
     elif seconds > 31536000:
         embed.add_field(name='Warning',
-                            value='You have specified a too long duration!\nMaximum duration is 1 year.')
+                            value='The duration is too long!\nMaximum duration is 1 year.')
     else:
         await ctx.send(f"Alright, I will remind you about: ```{reminder}``` in **{counter}**.")
         await asyncio.sleep(seconds)
