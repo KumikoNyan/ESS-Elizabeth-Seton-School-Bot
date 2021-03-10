@@ -361,6 +361,7 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
     channel = str(message.channel.id)
 
     command = str(message.content)
+    await message.delete()
     if command.startswith("!"):
 
         print(toDoDB)
