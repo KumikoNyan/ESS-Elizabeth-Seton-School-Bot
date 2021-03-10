@@ -3,7 +3,7 @@ import asyncio
 import random
 import pekofy as peko
 import replies
-# import os - use this if you want to use the for filename method instead of the bot.load_extension
+# import os - use this if you want to use the (for filename) method instead of the bot.load_extension
 import datetime
 from discord.ext import commands, tasks
 from itertools import cycle
