@@ -8,7 +8,13 @@
 ░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝
 
 This is a simple Discord bot created by 2 students for their capstone.  
+
 **HOW TO SETUP THE BOT?**
+> Run cmd and download *discord.py*, pip install discord.py
+> Clone this git or download the whole project file.
+> Put your token in *__main__.py* in the *token = ''* block.
+> Run the script using whatever method or application your prefer.
+> Recommendations: *Atom*, *PyCharm Community Edition*, *VS*, or IDLE.
 
 █████████████████████████████████████████████████████████████████
 █▄─█─▄█▄─██─▄█▄─▀█▀─▄█▄─▄█▄─█─▄█─▄▄─█▄─▀█▄─▄█▄─█─▄██▀▄─██▄─▀█▄─▄█
