@@ -390,13 +390,14 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
                 print(":x: No ToDo entered.")
             newToDo(command, channel)
             await message.author.send(":white_check_mark: ToDo `" + command + "` added.")
-            await message.delete()
+            await message.channel.purge(limit=1)
             print(":white_check_mark: ToDo '" + command + "' added.")
         elif command == "!add":
             await message.author.send(":x: Usage: `!add [TODO]`")
             print(":x: Usage: `!add [TODO]`")
 
         elif command == "!todo":
+            await message.channel.purge(limit=1)
             list = listToDo(channel)
             printline = ""
             for todo in list:
@@ -411,6 +412,7 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
 
         elif command.startswith("!done "):
             command = command.replace("!done ", "")
+            await message.channel.purge(limit=1)
             try:
                 command = int(command)
             except:
@@ -433,7 +435,7 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
             printline = "'!todo' - Show the current todo list.\n'!add [TODO]' - Add a new todo.\n'!done [ID]' - Mark a todo done (delete).\n'!helpt' - Show this menu.\nby @KumikoNyan"
             printline = ":question: **Help menu:** :question:\n" + "```" + printline + "```"
             await message.author.send(printline)
-            await message.delete()
+            await message.channel.purge(limit=1)
             print(printline)
 
 
