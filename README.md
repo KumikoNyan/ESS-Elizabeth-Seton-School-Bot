@@ -16,6 +16,6 @@ This is a simple Discord bot created by 2 students for their capstone.
 > 4. Run the script using whatever method or application your prefer.  
 > 5. Recommendations: *Atom*, *PyCharm Community Edition*, *VS*, or IDLE.  
 
-by @KumikoNyan and @MoeFAX
+by @KumikoNyan and @MoeFAX  
 Contributors: @Drillfinger @Lapurgs
   
