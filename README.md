@@ -17,4 +17,5 @@ This is a simple Discord bot created by 2 students for their capstone.
 > 5. Recommendations: *Atom*, *PyCharm Community Edition*, *VS*, or IDLE.  
 
 by @KumikoNyan and @MoeFAX
+Contributors: @Drillfinger @Lapurgs
   
