@@ -191,47 +191,47 @@ example: !remindme 30s Check the stove.\nby @KumikoNyan```
 
     if message.content == '!bio':
         await message.channel.purge(limit=1)
-        content = f'{text} https://ess-edu-ph.zoom.us/j/87956674727%22'.format(message)
+        content = f"{text}".format(message)
         await message.channel.send(content)
 
     if message.content == '!eap':
         await message.channel.purge(limit=1)
-        content = f"{text1} https://ess-edu-ph.zoom.us/j/82906848571%22".format(message)
+        content = f"{text1} ".format(message)
         await message.channel.send(content)
 
     if message.content == '!phy':
         await message.channel.purge(limit=1)
-        content = f"{text2} https://ess-edu-ph.zoom.us/j/82364390272%22".format(message)
+        content = f"{text2}".format(message)
         await message.channel.send(content)
 
     if message.content == '!entrep':
         await message.channel.purge(limit=1)
-        content = f"{text3} https://ess-edu-ph.zoom.us/j/84437506333%22".format(message)
+        content = f"{text3}".format(message)
         await message.channel.send(content)
 
     if message.content == '!hr':
         await message.channel.purge(limit=1)
-        content = f'{text4} https://ess-edu-ph.zoom.us/j/98918318531'.format(message)
+        content = f"{text4}".format(message)
         await message.channel.send(content)
 
     if message.content == '!guidance':
         await message.channel.purge(limit=1)
-        content = f'{text5} https://ess-edu-ph.zoom.us/j/99401621887'.format(message)
+        content = f"{text5}".format(message)
         await message.channel.send(content)
 
     if message.content == '!sched':
         await message.channel.purge(limit=1)
-        content = f'{text6} https://ibb.co/bQccQTQ'.format(message)
+        content = f"{text6}".format(message)
         await message.channel.send(content)
 
     if message.content == '!essfb':
         await message.channel.purge(limit=1)
-        content = f'{text7} https://www.facebook.com/elizabethsetonschool'.format(message)
+        content = f"{text7}".format(message)
         await message.channel.send(content)
 
     if message.content == '!ess':
         await message.channel.purge(limit=1)
-        content = f'{text8} https://www.ess.edu.ph/'.format(message)
+        content = f"{text8}".format(message)
         await message.channel.send(content)
 
     if message.content == '!mega':
