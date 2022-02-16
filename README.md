@@ -19,7 +19,7 @@ This is a simple Discord bot created by 2 students for their capstone.
 
 ## Setup
 1. Run `cmd` and download `discord.py` by typing `pip install discord.py`.     
-2. Enter your token in `__main__.py` on the `token =` block.  
+2. Enter your token in `__main__.py` on the `token` variable.  
 3. Run the code.  
 
 by @KumikoNyan and @MoeFAX 
