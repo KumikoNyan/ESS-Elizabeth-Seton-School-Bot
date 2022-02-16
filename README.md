@@ -18,8 +18,8 @@ This is a simple Discord bot created by 2 students for their capstone.
   -  Download the plugin for Python support
 
 ## Setup
-> 1. Run `cmd` and download `discord.py` by typing `pip install discord.py`.     
-> 2. Enter your token in `__main__.py` on the `token =` block.  
-> 3. Run the code.  
+1. Run `cmd` and download `discord.py` by typing `pip install discord.py`.     
+2. Enter your token in `__main__.py` on the `token =` block.  
+3. Run the code.  
 
 by @KumikoNyan and @MoeFAX 
