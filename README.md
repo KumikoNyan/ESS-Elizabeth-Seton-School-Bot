@@ -26,7 +26,7 @@ This is a simple python Discord bot created by 2 students for their capstone. Th
   -  ```datetime```
   -  ```pekofy```
 - Optional: [Visual Studio Code](https://code.visualstudio.com/)
-- Optional: [miniconda] (https://docs.conda.io/en/latest/miniconda.html)
+- Optional: [miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
 ## Setup
 1. Run ```cmd``` and download ```discord.py``` by typing ```pip install discord.py```.     
