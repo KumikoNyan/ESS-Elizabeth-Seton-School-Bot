@@ -1,6 +1,6 @@
 # ESS-Elizabeth-Seton-School-Bot
 
-This is a simple python Discord bot created by 2 students for their capstone. This project was mainly to develop a bot for our school during the pandemic. It would assist students in accessing our school's learning management system (LMS) seamlessly on Discord. 
+This is a simple Python Discord bot created by 2 students for their capstone. This project was mainly to develop a bot for our school during the pandemic. It would assist students in accessing our school's learning management system (LMS) seamlessly on Discord. 
 
 ## Features
 - Manage links
